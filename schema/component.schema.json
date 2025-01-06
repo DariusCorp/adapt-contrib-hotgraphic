@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Aspect acceptat",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -23,16 +23,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the icons to find out more.",
+          "title": "Instrucțiuni",
+          "default": "Selectați pictogramele pentru a afla mai multe.",
           "_adapt": {
             "translatable": true
           }
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the items - or just having viewed the component",
+          "title": "Criterii de completare",
+          "description": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele - sau doar a vizualizat componenta",
           "default": "allItems",
           "enum": [
             "inview",
@@ -42,13 +42,13 @@
         },
         "_graphic": {
           "type": "object",
-          "title": "Main graphic",
+          "title": "Grafică principală",
           "default": {},
           "properties": {
             "src": {
               "type": "string",
-              "title": "Source",
-              "description": "This is the image that appears behind the pins",
+              "title": "Sursă",
+              "description": "Aceasta este imaginea care apare în spatele pin-ilor",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -56,8 +56,8 @@
             },
             "alt": {
               "type": "string",
-              "title": "Alternative text",
-              "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+              "title": "Text alternativ",
+              "description": "O descriere a imaginii; necesară atunci când are un înțeles care trebuie transmis elevului. Pentru imaginile 'decorative', lăsați acest spațiu liber.",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -65,8 +65,8 @@
             },
             "attribution": {
               "type": "string",
-              "title": "Attribution",
-              "description": "Text to be displayed as an attribution",
+              "title": "Atribuire",
+              "description": "Text care trebuie afișat ca atribuire",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -76,8 +76,8 @@
         },
         "mobileBody": {
           "type": "string",
-          "title": "Mobile body",
-          "description": "This body text is displayed on mobile devices when this component turns into a Narrative",
+          "title": "Conținut mobil",
+          "description": "Acest corp de text este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -86,9 +86,9 @@
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
-          "default": "Select the plus icon followed by the next arrow to find out more.",
+          "title": "Instrucțiuni mobile",
+          "description": "Acest text de instrucțiune este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
+          "default": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
           "_adapt": {
             "translatable": true
           },
@@ -96,62 +96,62 @@
         },
         "_hidePagination": {
           "type": "boolean",
-          "title": "Hide pagination",
-          "description": "If enabled, the progress indicator and previous and next links will not be shown on the popup toolbar",
+          "title": "Ascundeți paginarea",
+          "description": "Dacă este activat, indicatorul de progres și linkurile anterioare și următoare nu vor fi afișate pe bara de instrumente pop-up",
           "default": false
         },
         "_canCycleThroughPagination": {
           "type": "boolean",
-          "title": "Loop items",
-          "description": "If enabled, the popup navigation buttons will cycle continuously through the popup items (i.e. clicking next whilst on the last item will cause the first item to be shown)",
+          "title": "Elemente de buclă",
+          "description": "Dacă sunt activate, butoanele de navigare pop-up vor trece continuu prin elementele pop-up (de exemplu, făcând clic pe următorul în timp ce se află pe ultimul element, primul element va face ca primul element să fie afișat)",
           "default": false
         },
         "_isNarrativeOnMobile": {
           "type": "boolean",
-          "title": "Replace with Narrative component on mobile",
-          "description": "If disabled, the Hotgraphic will render a scaled down 'desktop' version (pins over image / tiles) of the component in 'mobile' view instead of being replaced by a Narrative interaction",
+          "title": "Înlocuiți cu componenta Narrative pe mobil",
+          "description": "Dacă este dezactivat, Hotgraphic va afișa o versiune 'desktop' redusă (pini peste imagine / plăci) a componentei în vizualizarea 'mobil' în loc să fie înlocuită de o interacțiune narativă.",
           "default": true
         },
         "_isMobileTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image on mobile device",
-          "description": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button. Only applies when the Hot Graphic is configured to render as a Narrative on mobile",
+          "title": "Mutați zona de text sub imagine pe dispozitivul mobil",
+          "description": "Dacă este activat, pe mobil, zona de text cade sub imagine în loc să fie în spatele butonului strapline. Se aplică numai atunci când Hot Graphic este configurat pentru a fi redat ca Narrative pe mobil",
           "default": false
         },
         "_isStackedOnMobile": {
           "type": "boolean",
-          "title": "Stack images and text on mobile",
-          "description": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down. Only applies when the Hot Graphic is configured to render as a Narrative on mobile",
+          "title": "Stivuiți imagini și text pe mobil",
+          "description": "Dacă este activat, pe mobil, textul și imaginile vor fi stivuite vertical. Nu va fi necesară nicio interacțiune pentru a vizualiza toate elementele, deoarece utilizatorul va derula pur și simplu în jos. Se aplică numai atunci când Hot Graphic este configurat pentru a fi redat ca Narrative pe mobil",
           "default": false
         },
         "_useNumberedPins": {
           "type": "boolean",
-          "title": "Use numbered pins",
-          "description": "If enabled, the pin icons will be replaced with the item number. Useful if you want pins to be visited in a set order or show steps in a process",
+          "title": "Utilizarea pinilor numerotați",
+          "description": "Dacă este activată, pictogramele pin vor fi înlocuite cu numărul articolului. Util dacă doriți ca pinurile să fie vizitate într-o ordine stabilită sau să afișați pașii unui proces",
           "default": false
         },
         "_useGraphicsAsPins": {
           "type": "boolean",
-          "title": "Use grid layout",
-          "description": "If enabled, the main graphic will be hidden and pins will be displayed as images which can be positioned using classes",
+          "title": "Utilizați aspectul tip grilă",
+          "description": "Dacă este activată, graficul principal va fi ascuns și pinii vor fi afișați ca imagini care pot fi poziționate folosind clase",
           "default": false
         },
         "_hasStaticTooltips": {
           "type": "boolean",
-          "title": "Use static tooltips",
-          "description": "If enabled, tooltips (if themselves enabled) will always be shown rather than only on hover.",
+          "title": "Utilizarea sfaturilor ecran statice",
+          "description": "Dacă este activat, sfaturile de ecran (dacă sunt activate) vor fi afișate întotdeauna, nu doar la trecerea cu mouse-ul.",
           "default": false
         },
         "_isRound": {
           "type": "boolean",
-          "title": "Use circular popup item images",
-          "description": "If enabled, a 50% border radius will be applied to the items pop up images",
+          "title": "Utilizați imagini circulare ale elementelor pop-up",
+          "description": "Dacă este activată, o rază de margine de 50% va fi aplicată imaginilor pop-up ale elementelor",
           "default": false
         },
         "_pinOffsetOrigin": {
           "type": "boolean",
-          "title": "Offset pin origin point",
-          "description": "If set to `true`, the pins origin point will be changed from `top left` to `center`. This option will enable the pin to remain stationary when viewing responsively. The default is `false`.",
+          "title": "Punctul de origine al pinului decalat",
+          "description": "Dacă este setat pe `true`, punctul de origine al pinilor se va schimba de la `stânga sus` la `centru`. Această opțiune va permite pinului să rămână staționar atunci când vizualizezi responsiv. Implicit este `false`.",
           "default": false
         },
         "_items": {
@@ -166,8 +166,8 @@
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
-                "description": "Title displayed in the popup",
+                "title": "Titlu",
+                "description": "Titlul afișat în fereastra pop-up",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -175,8 +175,8 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
-                "description": "Body text displayed in the popup",
+                "title": "Conținut",
+                "description": "Textul corpului afișat în fereastra pop-up",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -186,7 +186,7 @@
               "strapline": {
                 "type": "string",
                 "title": "Strapline",
-                "description": "Strapline - displayed on mobile version only",
+                "description": "Strapline - afișat numai pe versiunea mobilă",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -194,8 +194,8 @@
               },
               "_imageAlignment": {
                 "type": "string",
-                "title": "Image alignment",
-                "description": "Defines the alignment of the item image in the pop up. Left: Image aligned to the left of the text area. Top: Image aligned above the text area. Right: Image aligned to the right of the text area. Bottom: Image aligned below the text area.The default alignment is `right`.",
+                "title": "Alinierea imaginii",
+                "description": "Stabilește alinierea imaginii elementului în fereastra pop-up. Stânga(Left): Imaginea este aliniată la stânga zonei de text. Sus(Top): Imaginea este aliniată deasupra zonei de text. Dreapta(Right): Imaginea este aliniată la dreapta zonei de text. Jos(Bottom): Imaginea este aliniată sub zona de text. Alinierea implicită este `right`.",
                 "default": "right",
                 "enum": [
                   "left",
@@ -207,7 +207,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Grafic",
                 "default": {},
                 "required": [
                   "src"
@@ -215,8 +215,8 @@
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Source",
-                    "description": "Image to be displayed in a popup when this item is selected",
+                    "title": "Sursă",
+                    "description": "Imagine care va fi afișată într-o fereastră pop-up atunci când acest element este selectat",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -224,8 +224,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Text alternativ",
+                    "description": "O descriere a imaginii; necesar atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lăsați acest spațiu necompletat",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -233,8 +233,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution for the popup image",
+                    "title": "Atribuire",
+                    "description": "Text care trebuie afișat ca atribuire pentru imaginea pop-up",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -242,8 +242,8 @@
                   },
                   "_classes": {
                     "type": "string",
-                    "title": "Pin custom classes",
-                    "description": "Allows you to specify custom CSS classes to be applied to the hotgraphic pin or, alternatively, to the hotspot tile when _useGraphicsAsPins is set to true",
+                    "title": "Fixarea claselor particularizate",
+                    "description": "Vă permite să specificați clasele CSS personalizate care urmează să fie aplicate la pinul hotgraphic sau, alternativ, la dala hotspot atunci când _useGraphicsAsPins este setată la true",
                     "default": ""
                   }
                 }
@@ -255,8 +255,8 @@
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Pin image (default)",
-                    "description": "This is the pin image. Leave blank to use the default icon.",
+                    "title": "Imagine pin (implicit)",
+                    "description": "Aceasta este imaginea pinului. Lăsați necompletat pentru a utiliza pictograma implicită.",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -264,8 +264,8 @@
                   },
                   "srcHover": {
                     "type": "string",
-                    "title": "Pin image (hover)",
-                    "description": "This is the pin image hover state (optional).",
+                    "title": "Imagine pin (la trecerea cu mouse-ul)",
+                    "description": "Aceasta este imaginea la trecerea cu mouse-ul (opțional).",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -273,8 +273,8 @@
                   },
                   "srcVisited": {
                     "type": "string",
-                    "title": "Pin image (visited)",
-                    "description": "This is the pin image visited state (optional).",
+                    "title": "Imagine pin (vizualizare)",
+                    "description": "Aceasta este imaginea pinului în starea de vizualizare (opțional).",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -282,8 +282,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Text alternativ",
+                    "description": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lasă acest spațiu liber.",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -293,42 +293,42 @@
               },
               "_classes": {
                 "type": "string",
-                "title": "Popup item custom classes",
-                "description": "Allows you to specify custom CSS classes to be applied to the popup item. 'hide-desktop-image' hides the pop up image in desktop view. 'hide-popup-image' hides the pop up image for all screen sizes.",
+                "title": "Clase particularizate de articole pop-up",
+                "description": "Permite să specifici clase CSS personalizate care să fie aplicate elementului popup. 'hide-desktop-image' ascunde imaginea popup în vizualizarea desktop. 'hide-popup-image' ascunde imaginea popup pentru toate dimensiunile de ecran.",
                 "default": ""
               },
               "_left": {
                 "type": "number",
-                "title": "Pin horizontal position (%)",
+                "title": "Poziția orizontală a pinului (%)",
                 "default": 0
               },
               "_top": {
                 "type": "number",
-                "title": "Pin vertical position (%)",
+                "title": "Poziția verticală a pinului (%)",
                 "default": 0
               },
               "_tooltip": {
                 "type": "object",
-                "title": "Tooltip",
+                "title": "Sfat",
                 "properties": {
                   "_isEnabled": {
                     "type": "boolean",
                     "default": false,
-                    "title": "Is enabled?",
-                    "description": "If enabled, a tooltip will be displayed on hover over this item. If 'Use static tooltips' is enabled, then tooltips will always be shown."
+                    "title": "Este activat?",
+                    "description": "Dacă este activat, va fi afișat un sfat pe ecran la trecerea cu mouse-ul peste acest element. Dacă este activată opțiunea 'Utilizare sfaturi statice', atunci sfaturile ecran vor fi afișate întotdeauna."
                   },
                   "text": {
                     "type": "string",
                     "default": "{{ariaLabel}}",
-                    "title": "Tooltip text",
-                    "description": "The tooltip text to display for this item",
+                    "title": "Textul sfatului de pe ecran",
+                    "description": "Textul sfatului de pe ecran, de afișat pentru acest element",
                     "translatable": true
                   },
                   "_position": {
                     "type": "string",
-                    "title": "Tooltip position",
+                    "title": "Poziția sfatului",
                     "default": "bottom",
-                    "description": "The tooltip position in relation to the pin. Defaults to 'bottom'",
+                    "description": "Poziția sfatului de informații în raport cu pinul. Implicit la 'bottom' (jos)",
                     "enum": [
                       "top",
                       "top right",

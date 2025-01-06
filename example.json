@@ -9,10 +9,10 @@
         "_layout": "full",
         "title": "Hot graphic",
         "displayTitle": "Hot graphic",
-        "body": "This is optional body text.",
-        "instruction": "Select the icons to find out more.",
-        "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
-        "mobileInstruction": "Select the plus icon followed by the next arrow to find out more.",
+        "body": "Acesta este un text opțional.",
+        "instruction": "Selectați pictogramele pentru a afla mai multe.",
+        "mobileBody": "Acesta este un text de corp opțional care va fi afișat atunci când este vizualizat pe mobil.",
+        "mobileInstruction": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
         "_comment": "setCompletionOn = inview | allItems",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -28,22 +28,22 @@
         "_graphic": {
             "src": "course/en/images/background.jpg",
             "alt": "",
-            "attribution": "Copyright © 2024"
+            "attribution": "Copyright © 2025"
         },
         "_items": [
             {
                 "_top": 25,
                 "_left": 25,
-                "title": "Hotspot 1 title",
-                "body": "This is display text 1.",
-                "strapline": "Hotspot 1 strapline",
+                "title": "Titlul hotspot 1",
+                "body": "Acesta este textul de afișare 1.",
+                "strapline": "Sloganul Hotspot-ului 1",
                 "_imageAlignment": "right",
-                "_comment": "Supported classes = 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+                "_comment": "Clase acceptate = 'hide-desktop-image' | 'hide-popup-image'. Pot fi utilizate clase suplimentare, dar acestea trebuie să fie predefinite într-unul dintre fișierele Less",
                 "_classes": "",
                 "_graphic": {
                     "src": "course/en/images/hotgraphic-1.jpg",
                     "alt": "",
-                    "attribution": "Copyright © 2024",
+                    "attribution": "Copyright © 2025",
                     "_classes": ""
                 },
                 "_tooltip": {
@@ -56,9 +56,9 @@
             {
                 "_top": 50,
                 "_left": 50,
-                "title": "Hotspot 2 title",
-                "body": "This is display text 2 with a left aligned image.",
-                "strapline": "Hotspot 2 strapline",
+                "title": "Titlul hotspot 2",
+                "body": "Acesta este textul de afișare 2 cu o imagine aliniată la stânga.",
+                "strapline": "Sloganul Hotspot-ului 2",
                 "_imageAlignment": "left",
                 "_classes": "",
                 "_graphic": {
@@ -77,9 +77,9 @@
             {
                 "_top": 75,
                 "_left": 75,
-                "title": "Hotspot 3 title",
-                "body": "This is display text 3 with a right aligned image.",
-                "strapline": "Hotspot 3 strapline",
+                "title": "Titlul hotspot 3",
+                "body": "Acesta este textul de afișare 3 cu o imagine aliniată la dreapta.",
+                "strapline": "Sloganul Hotspot-ului 3",
                 "_imageAlignment": "right",
                 "_classes": "",
                 "_graphic": {
@@ -109,14 +109,14 @@
         "_useGraphicsAsPins": true,
         "_items": [
             {
-                "title": "Tile 1 title",
-                "body": "This is display text 1.",
-                "strapline": "Tile 1 strapline",
+                "title": "Titlul plăcii 1",
+                "body": "Acesta este textul de afișare 1.",
+                "strapline": "Sloganul plăcii 1",
                 "_classes": "",
                 "_graphic": {
                     "src": "course/en/images/hotgraphic-1.jpg",
                     "alt": "",
-                    "attribution": "Copyright © 2024",
+                    "attribution": "Copyright © 2025",
                     "_classes": ""
                 },
                 "_tooltip": {
@@ -125,9 +125,9 @@
                 }
             },
             {
-                "title": "Tile 2 title",
-                "body": "This is display text 2.",
-                "strapline": "Tile 2 strapline",
+                "title": "Titlul plăcii 2",
+                "body": "Acesta este textul de afișare 2.",
+                "strapline": "Sloganul plăcii 2",
                 "_classes": "",
                 "_graphic": {
                     "src": "course/en/images/hotgraphic-2.jpg",
@@ -153,15 +153,15 @@
             {
                 "_left": 25,
                 "_top": 25,
-                "title": "Hotspot 1 title",
-                "body": "This is display text 1.",
-                "strapline": "Hotspot 1 strapline",
+                "title": "Titlul hotspot 1",
+                "body": "Acesta este textul de afișare 1.",
+                "strapline": "Sloganul Hotspot-ului 1",
                 "_imageAlignment": "right",
                 "_classes": "",
                 "_graphic": {
                     "src": "course/en/images/hotgraphic-1.jpg",
                     "alt": "",
-                    "attribution": "Copyright © 2024",
+                    "attribution": "Copyright © 2025",
                     "_classes": ""
                 },
                 "_tooltip": {
@@ -180,9 +180,9 @@
             {
                 "_left": 50,
                 "_top": 50,
-                "title": "Hotspot 2 title",
-                "body": "This is display text 2.",
-                "strapline": "Hotspot 2 strapline",
+                "title": "Titlul hotspot 2",
+                "body": "Acesta este textul de afișare 2.",
+                "strapline": "Sloganul Hotspot-ului 2",
                 "_imageAlignment": "right",
                 "_classes": "",
                 "_graphic": {

@@ -7,7 +7,7 @@
   "component": "hotgraphic",
   "targetAttribute": "_hotgraphic",
   "displayName": "Hot Graphic",
-  "description": "A component that enables a user to click on pins over an image to display more detail in a popup",
+  "description": "O componentă care permite unui utilizator să facă clic pe pini peste o imagine pentru a afișa mai multe detalii într-o fereastră pop-up",
   "main": "/js/adapt-contrib-hotgraphic.js",
   "keywords": [
     "adapt-plugin",

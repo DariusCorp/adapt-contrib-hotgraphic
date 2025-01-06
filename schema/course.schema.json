@@ -23,41 +23,41 @@
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Image with selectable areas. Select each button to show more information.",
+                      "title": "Zonă ARIA",
+                      "default": "Imagine cu zone selectabile. Selectați fiecare buton pentru a afișa mai multe informații.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "item": {
                       "type": "string",
-                      "title": "Item count label",
-                      "description": "This is the aria label for each item. Use {{itemNumber}} and {{totalItems}} in your text to tell the user which item they are viewing and how many items there are in total",
-                      "default": "Item {{itemNumber}} of {{totalItems}}",
+                      "title": "Eticheta prntru numărul de articole",
+                      "description": "Aceasta este eticheta ariei pentru fiecare articol. Folosiți {{itemNumber}} și {{totalItems}} în textul dvs. pentru a spune utilizatorului ce element vizualizează și câte elemente sunt în total",
+                      "default": "Articolul {{itemNumber}} din {{totalItems}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "previous": {
                       "type": "string",
-                      "title": "Previous",
-                      "default": "{{#if title}}Back to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
+                      "title": "Precedentul",
+                      "default": "{{#if title}}Înapoi la {{{title}}} (item {{itemNumber}} din {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "next": {
                       "type": "string",
-                      "title": "Next",
-                      "default": "{{#if title}}Forward to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
+                      "title": "Următorul",
+                      "default": "{{#if title}}Înainte la {{{title}}} (item {{itemNumber}} din {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "popupPagination": {
                       "type": "string",
-                      "title": "Popup pagination",
-                      "description": "This is the item count displayed in the popup. Use {{itemNumber}} and {{totalItems}} in your text to tell the user which item they are viewing and how many items there are in total",
+                      "title": "Paginare pop-up",
+                      "description": "Acesta este numărul de elemente afișat în fereastra pop-up. Folosiți {{itemNumber}} și {{totalItems}} în textul dvs. pentru a spune utilizatorului ce element vizualizează și câte elemente sunt în total",
                       "default": "{{itemNumber}} / {{totalItems}}",
                       "_adapt": {
                         "translatable": true

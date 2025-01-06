@@ -7,30 +7,30 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Image with selectable areas. Select each button to show more information.",
+      "default": "Imagine cu zone selectabile. Selectați fiecare buton pentru a afișa mai multe informații.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
     },
     "item": {
       "type": "string",
-      "title": "Item count label",
+      "title": "Eticheta pentru număr de articole",
       "default": "Item {{itemNumber}} of {{totalItems}}",
       "inputType": "Text",
-      "help": "This is the aria label for each item. Use {{itemNumber}} and {{totalItems}} in your text to tell the user which item they are viewing and how many items there are in total.",
+      "help": "Aceasta este eticheta ariei pentru fiecare articol. Utilizați {{itemNumber}} și {{totalItems}} în text pentru a spune utilizatorului ce element vizualizează și câte articole sunt în total.",
       "translatable": true
     },
     "previous": {
       "type": "string",
-      "title": "Previous",
-      "default": "{{#if title}}Back to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
+      "title": "Precedent",
+      "default": "{{#if title}}Înapoi la {{{title}}} (item {{itemNumber}} din {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
       "inputType": "Text",
       "translatable": true
     },
     "next": {
       "type": "string",
-      "title": "Next",
-      "default": "{{#if title}}Forward to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
+      "title": "Următor",
+      "default": "{{#if title}}Înainte la {{{title}}} (item {{itemNumber}} din {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
       "inputType": "Text",
       "translatable": true
     },
@@ -40,7 +40,7 @@
       "default": "{{itemNumber}} / {{totalItems}}",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the item count displayed in the popup. Use {{itemNumber}} and {{totalItems}} in your text to tell the user which item they are viewing and how many items there are in total.",
+      "help": "Acesta este numărul de elemente afișat în fereastra pop-up. Utilizați {{itemNumber}} și {{totalItems}} în text pentru a spune utilizatorului ce element vizualizează și câte articole sunt în total.",
       "translatable": true
     }
   },
@@ -59,7 +59,7 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the icons to find out more.",
+      "default": "Selectați pictogramele pentru a afla mai multe.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -68,19 +68,19 @@
       "type": "string",
       "required": false,
       "default": "allItems",
-      "title": "Set completion on:",
+      "title": "Setați finalizarea pe:",
       "enum": ["inview", "allItems"],
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": [],
-      "help": "Whether completion is based on the learner having viewed all the items - or just having viewed the component"
+      "help": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele - sau doar a vizualizat componenta"
     },
     "_graphic": {
       "type": "object",
       "required": false,
-      "title": "Main hotgraphic",
+      "title": "Hotgraphic principal",
       "properties": {
         "src": {
           "type": "string",
@@ -88,16 +88,16 @@
           "default": "",
           "inputType": "Asset:image",
           "validators": [],
-          "help": "This is the image that appears behind the pins"
+          "help": "Aceasta este imaginea care apare în spatele pinilor"
         },
         "alt": {
           "type": "string",
           "required": false,
-          "title": "Alternative text",
+          "title": "Text alternativ",
           "default": "",
           "inputType": "Text",
           "validators": [],
-          "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+          "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis învățăcelului. Pentru imaginile 'decorative', lasă acest spațiu liber.,
           "translatable": true
         },
         "attribution": {
@@ -106,7 +106,7 @@
           "default": "",
           "inputType": "Text",
           "validators": [],
-          "help": "Text to be displayed as an attribution",
+          "help": "Text care trebuie afișat ca atribuire",
           "translatable": true
         }
       }
@@ -117,112 +117,112 @@
       "default": "",
       "inputType": "TextArea",
       "validators": [],
-      "help": "This body text is displayed on mobile devices when this component turns into a Narrative",
+      "help": "Acest corp de text este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
       "translatable": true
     },
     "mobileInstruction": {
       "type": "string",
       "required": false,
-      "default": "Select the plus icon followed by the next arrow to find out more.",
+      "default": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
       "inputType": "Text",
       "validators": [],
-      "help": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
+      "help": "Acest text de instrucțiune este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
       "translatable": true
     },
     "_isNarrativeOnMobile": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Render as Narrative on mobile?",
+      "title": "Redare ca narațiune pe mobil?",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, the Hotgraphic will render a scaled down 'desktop' version (pins over image / tiles) of the component in 'mobile' view instead of being replaced by a Narrative interaction."
+      "help": "Dacă este dezactivat, Hotgraphic va reda o versiune 'desktop' redusă (pini peste imagine / plăci) a componentei în vizualizarea 'mobil' în loc să fie înlocuită de o interacțiune narativă."
     },
     "_isMobileTextBelowImage": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Move text area below image on mobile device",
+      "title": "Mutați zona de text sub imagine pe dispozitivul mobil",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button. Only applies when the Hot Graphic is configured to render as a Narrative on mobile"
+      "help": "Dacă este activat, pe mobil, zona de text cade sub imagine în loc să fie în spatele butonului strapline. Se aplică numai atunci când Hot Graphic este configurat pentru a fi redat ca Narrative pe mobil"
     },
     "_isStackedOnMobile": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Stack images and text on mobile",
+      "title": "Stivuiți imagini și text pe mobil",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down. Only applies when the Hot Graphic is configured to render as a Narrative on mobile"
+      "help": "Dacă este activat, pe mobil, textul și imaginile vor fi stivuite vertical. Nu va fi necesară nicio interacțiune pentru a vizualiza toate elementele, deoarece utilizatorul va derula pur și simplu în jos. Se aplică numai atunci când Hot Graphic este configurat pentru a fi redat ca Narrative pe mobil"
     },
     "_hidePagination": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Hide pagination",
+      "title": "Ascundeți paginarea",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the progress indicator and previous and next links will not be shown on the popup toolbar"
+      "help": "Dacă este activat, indicatorul de progres și linkurile anterioare și următoare nu vor fi afișate pe bara de instrumente pop-up"
     },
     "_canCycleThroughPagination": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Cycle through item pagination",
+      "title": "Parcurgerea paginarii elementelor",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the popup navigation buttons will cycle continuously through the popup items (i.e. clicking next whilst on the last item will cause the first item to be shown."
+      "help": "Dacă sunt activate, butoanele de navigare pop-up vor trece continuu prin elementele pop-up (adică făcând clic pe următorul în timp ce se află pe ultimul element, primul element va face ca primul element să fie afișat)."
     },
     "_useNumberedPins": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Use numbered pins",
+      "title": "Utilizarea pinilor numerotați",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the pin icons will be replaced with the item number. Useful if you want pins to be visited in a set order or show steps in a process."
+      "help": "Dacă este activată, pictogramele pin vor fi înlocuite cu numărul articolului. Util dacă vrei ca pinurile să fie vizitate într-o ordine stabilită sau să arate pașii dintr-un proces."
     },
     "_useGraphicsAsPins": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Use graphics as pins",
+      "title": "Utilizați grafică ca pini",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the main graphic will be hidden and pins will be displayed as images which can be positioned using classes"
+      "help": "Dacă este activată, graficul principal va fi ascuns și pinii vor fi afișați ca imagini care pot fi poziționate folosind clase"
     },
     "_hasStaticTooltips": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Use static tooltips",
+      "title": "Utilizarea sfaturilor ecran statice",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, tooltips (if themselves enabled) will always be shown rather than only on hover."
+      "help": "Dacă este activat, sfaturile de ecran (dacă sunt activate) vor fi afișate întotdeauna, mai degrabă decât doar la trecerea cu mouse-ul."
     },
     "_isRound": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Should item image be round?",
+      "title": "Imaginea articolului ar trebui să fie rotundă?",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, a 50% border radius will be applied to the items pop up images."
+      "help": "Dacă este activată, o rază de margine de 50% va fi aplicată imaginilor pop-up ale elementelor."
     },
     "_pinOffsetOrigin": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Offset pin origin point",
+      "title": "Punctul de origine al pinului decalat",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If set to `true`, the pins origin point will be changed from `top left` to `center`. This option will enable the pin to remain stationary when viewing responsively. The default is `false`."
+      "help": "Dacă este setat pe `true`, punctul de origine al pinilor se va schimba de la `stânga sus` la `centru`. Această opțiune va permite pinului să rămână staționar atunci când vizualizezi responsiv. Implicit este `false`."
     },
     "_items": {
       "type": "array",
       "required": true,
-      "title": "Hot Graphic Pins",
+      "title": "Pini Hot Graphic",
       "items": {
         "type": "object",
         "required": true,
@@ -233,7 +233,7 @@
             "default": "",
             "inputType": "Text",
             "validators": ["required"],
-            "help": "Title displayed in the popup",
+            "help": "Titlul afișat în fereastra pop-up",
             "translatable": true
           },
           "body": {
@@ -242,7 +242,7 @@
             "default": "",
             "inputType": "TextArea",
             "validators": ["required"],
-            "help": "Body text displayed in the popup",
+            "help": "Textul afișat în fereastra pop-up",
             "translatable": true
           },
           "strapline": {
@@ -251,7 +251,7 @@
             "default": "",
             "inputType": "Text",
             "validators": ["required"],
-            "help": "Strapline - displayed on mobile version only",
+            "help": "Strapline - afișat numai pe versiunea mobilă",
             "translatable": true
           },
           "_imageAlignment": {
@@ -259,8 +259,8 @@
             "required": false,
             "default": "right",
             "inputType": {"type":"Select", "options":["left","top","right","bottom"]},
-            "title": "Image alignment",
-            "help": "Defines the alignment of the item image in the pop up. Left: Image aligned to the left of the text area. Top: Image aligned above the text area. Right: Image aligned to the right of the text area. Bottom: Image aligned below the text area.The default alignment is `right`."
+            "title": "Alinierea imaginii",
+            "help": "Stabilește alinierea imaginii elementului în fereastra pop-up. Stânga(Left): Imaginea este aliniată la stânga zonei de text. Sus(Top): Imaginea este aliniată deasupra zonei de text. Dreapta(Right): Imaginea este aliniată la dreapta zonei de text. Jos(Bottom): Imaginea este aliniată sub zona de text. Alinierea implicită este `right`."
           },
           "_graphic": {
             "type": "object",
@@ -273,16 +273,16 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": ["required"],
-                "help": "Image to be displayed in a popup when this item is selected."
+                "help": "Imaginea va fi afișată într-o fereastră pop-up atunci când acest element este selectat."
               },
               "alt": {
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Alternative text",
+                "title": "Text alternativ",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lasă acest lucru liber.",
                 "translatable": true
               },
               "attribution": {
@@ -291,24 +291,24 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution for the popup image",
+                "help": "Text care trebuie afișat ca atribuire pentru imaginea pop-up",
                 "translatable": true
               },
               "_classes": {
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Graphic Classes",
+                "title": "Clase Grafice",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Allows you to specify custom CSS classes to be applied to the hotgraphic pin or, alternatively, to the hotspot tile when _useGraphicsAsPins is set to true"
+                "help": "Vă permite să specificați clasele CSS personalizate care urmează să fie aplicate la pinul hotgraphic sau, alternativ, la dala hotspot atunci când _useGraphicsAsPins este setată la true"
               }
             }
           },
           "_tooltip": {
             "type": "object",
             "required": true,
-            "title": "Tooltip",
+            "title": "Sfat",
             "properties": {
               "_isEnabled": {
                 "type": "boolean",
@@ -317,23 +317,23 @@
                 "title": "Is enabled?",
                 "inputType": "Checkbox",
                 "validators": [],
-                "help": "If enabled, a tooltip will be displayed on hover over this item. If 'Use static tooltips' is enabled, then tooltips will always be shown."
+                "help": "Dacă este activat, va fi afișat un sfat pe ecran la trecerea cu mouse-ul peste acest element. Dacă este activată opțiunea "Utilizare sfaturi statice", atunci sfaturile ecran vor fi afișate întotdeauna."
               },
               "text": {
                 "type": "string",
                 "required": false,
                 "default": "{{ariaLabel}}",
-                "title": "Tooltip text",
+                "title": "Text pentru sfat",
                 "inputType": "Text",
                 "validators": [],
-                "help": "The tooltip text to display for this item",
+                "help": "Textul sfatului de ecran, de afișat pentru acest element",
                 "translatable": true
               },
               "_position": {
                 "type": "string",
                 "required": true,
-                "title": "Tooltip position",
-                "help": "The tooltip position in relation to the pin. Defaults to 'bottom'",
+                "title": "Poziția sfatului",
+                "help": "Poziția sfatului de informații în raport cu pinul. Implicit la 'bottom'",
                 "enum": ["top", "top right", "right", "bottom right", "bottom", "bottom left", "left", "top left"],
                 "inputType": {
                   "type": "Select",
@@ -355,8 +355,8 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [] ,
-                "title": "Pin image (default)",
-                "help": "This is the pin image. Leave blank to use the default icon."
+                "title": "Imagine Pin (implicit)",
+                "help": "Aceasta este imaginea pinului. Lăsați necompletat pentru a utiliza pictograma implicită."
               },
               "srcHover": {
                 "type": "string",
@@ -364,8 +364,8 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [] ,
-                "title": "Pin image (hover)",
-                "help": "This is the pin image hover state  (optional)."
+                "title": "Imagine pin (la trecerea cu mouse-ul)",
+                "help": "Aceasta este imaginea la trecerea cu mouse-ul (opțional)."
               },
               "srcVisited": {
                 "type": "string",
@@ -373,8 +373,8 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [] ,
-                "title": "Pin image (visited)",
-                "help": "This is the pin image visited state  (optional)."
+                "title": "Imagine Pin (vizualizare)",
+                "help": "Aceasta este starea de vizualizare a imaginii pin (opțional)."
               },
               "alt": {
                 "type": "string",
@@ -382,7 +382,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lasă acest spațiu liber.",
                 "translatable": true
               }
             }
@@ -391,28 +391,28 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Item Popup Classes",
+            "title": "Clase de articole pop-up",
             "inputType": "Text",
             "validators": [],
-            "help": "Allows you to specify custom CSS classes to be applied to the popup item. 'hide-desktop-image' hides the pop up image in desktop view. 'hide-popup-image' hides the pop up image for all screen sizes."
+            "help": "Permite să specifici clase CSS personalizate care să fie aplicate elementului popup. 'hide-desktop-image' ascunde imaginea popup în vizualizarea desktop. 'hide-popup-image' ascunde imaginea popup pentru toate dimensiunile de ecran."
           },
           "_left": {
             "type": "number",
             "required": true,
             "default": 0,
-            "title": "Pin Position - Left",
+            "title": "Poziția pinului - stânga",
             "inputType": "Number",
             "validators": ["required", "number"],
-            "help": "Left position of pin"
+            "help": "Poziția pinului în stânga"
           },
           "_top": {
             "type": "number",
             "required": true,
             "default": 0,
-            "title": "Pin Position - Top",
+            "title": "Poziția pinului - sus",
             "inputType": "Number",
             "validators": ["required", "number"],
-            "help": "Top position of pin"
+            "help": "Poziția pinului sus"
           }
         }
       }
