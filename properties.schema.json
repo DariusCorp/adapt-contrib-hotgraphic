@@ -97,7 +97,7 @@
           "default": "",
           "inputType": "Text",
           "validators": [],
-          "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis învățăcelului. Pentru imaginile 'decorative', lasă acest spațiu liber.,
+          "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis învățăcelului. Pentru imaginile 'decorative', lasă acest spațiu liber.",
           "translatable": true
         },
         "attribution": {
@@ -317,7 +317,7 @@
                 "title": "Is enabled?",
                 "inputType": "Checkbox",
                 "validators": [],
-                "help": "Dacă este activat, va fi afișat un sfat pe ecran la trecerea cu mouse-ul peste acest element. Dacă este activată opțiunea "Utilizare sfaturi statice", atunci sfaturile ecran vor fi afișate întotdeauna."
+                "help": "Dacă este activat, va fi afișat un sfat pe ecran la trecerea cu mouse-ul peste acest element. Dacă este activată opțiunea 'Utilizare sfaturi statice', atunci sfaturile ecran vor fi afișate întotdeauna."
               },
               "text": {
                 "type": "string",
