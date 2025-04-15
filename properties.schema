@@ -59,6 +59,7 @@
     "instruction": {
       "type": "string",
       "required": false,
+      "title": "Instrucțiuni",
       "default": "Selectați pictogramele pentru a afla mai multe.",
       "inputType": "Text",
       "validators": [],
@@ -80,12 +81,13 @@
     "_graphic": {
       "type": "object",
       "required": false,
-      "title": "Hotgraphic principal",
+      "title": "Imagine Hotgraphic principală",
       "properties": {
         "src": {
           "type": "string",
           "required": false,
           "default": "",
+          "title": "Imagine",
           "inputType": "Asset:image",
           "validators": [],
           "help": "Aceasta este imaginea care apare în spatele pinilor"
@@ -104,6 +106,7 @@
           "type": "string",
           "required": false,
           "default": "",
+          "title": "Atribuire",
           "inputType": "Text",
           "validators": [],
           "help": "Text care trebuie afișat ca atribuire",
@@ -115,6 +118,7 @@
       "type": "string",
       "required": false,
       "default": "",
+      "title": "Corp mobil",
       "inputType": "TextArea",
       "validators": [],
       "help": "Acest corp de text este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
@@ -124,6 +128,7 @@
       "type": "string",
       "required": false,
       "default": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
+      "title": "Instrucțiuni mobile",
       "inputType": "Text",
       "validators": [],
       "help": "Acest text de instrucțiune este afișat pe dispozitivele mobile atunci când această componentă se transformă într-o narațiune",
