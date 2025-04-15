@@ -87,7 +87,7 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Imagine",
+          "title": "Selectați imagine",
           "inputType": "Asset:image",
           "validators": [],
           "help": "Aceasta este imaginea care apare în spatele pinilor"
@@ -236,6 +236,7 @@
             "type": "string",
             "required": true,
             "default": "",
+            "title": "Titlul",
             "inputType": "Text",
             "validators": ["required"],
             "help": "Titlul afișat în fereastra pop-up",
@@ -245,6 +246,7 @@
             "type": "string",
             "required": true,
             "default": "",
+            "title": "Corp",
             "inputType": "TextArea",
             "validators": ["required"],
             "help": "Textul afișat în fereastra pop-up",
@@ -254,9 +256,10 @@
             "type": "string",
             "required": true,
             "default": "",
+            "title": "Slogan",
             "inputType": "Text",
             "validators": ["required"],
-            "help": "Strapline - afișat numai pe versiunea mobilă",
+            "help": "Slogan - afișat numai pe versiunea mobilă",
             "translatable": true
           },
           "_imageAlignment": {
@@ -270,12 +273,13 @@
           "_graphic": {
             "type": "object",
             "required": true,
-            "title": "Item Graphic",
+            "title": "Imagine articol",
             "properties": {
               "src": {
                 "type": "string",
                 "required": true,
                 "default": "",
+                "title": "Selectați imagine",
                 "inputType": "Asset:image",
                 "validators": ["required"],
                 "help": "Imaginea va fi afișată într-o fereastră pop-up atunci când acest element este selectat."
@@ -294,6 +298,7 @@
                 "type": "string",
                 "required": false,
                 "default": "",
+                "title": "Atribuire",
                 "inputType": "Text",
                 "validators": [],
                 "help": "Text care trebuie afișat ca atribuire pentru imaginea pop-up",
@@ -319,7 +324,7 @@
                 "type": "boolean",
                 "required": false,
                 "default": false,
-                "title": "Is enabled?",
+                "title": "Este activat?",
                 "inputType": "Checkbox",
                 "validators": [],
                 "help": "Dacă este activat, va fi afișat un sfat pe ecran la trecerea cu mouse-ul peste acest element. Dacă este activată opțiunea 'Utilizare sfaturi statice', atunci sfaturile ecran vor fi afișate întotdeauna."
@@ -385,6 +390,7 @@
                 "type": "string",
                 "required": false,
                 "default": "",
+                "title": "Text alternativ",
                 "inputType": "Text",
                 "validators": [],
                 "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lasă acest spațiu liber.",
